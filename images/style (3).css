@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@300;400;700&display=swap');
+/*11 minuts*/
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+        font-family: 'Tajawal', sans-serif;
+        /*font-family: 'Lalezar', cursive;*/
+}
+nav{
+    /*background-color: aqua;  */  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 5rem;
+   /* position: sticky;  /* من درس الجيم تثبيت الناف بار*/
+   /* top: 0;  /* من درس الجيم تثبيت الناف بار*/
+  /*  z-index: 1;  /* من درس الجيم تثبيت الناف بار*/    */
+}
+nav .logo{
+     
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+nav .logo i{
+    color: #6e0aef;
+    padding-left: 0.75rem;
+}
+nav .logo h4{
+    /*font-family: 'Lalezar', cursive;*/
+   font-family: cursive;
+}
+
+nav .ulnav-items{
+    /*background-color: #08d9d6;*/
+    display: flex;
+    list-style-type: none;
+    }
+nav .ulnav-items .linav-item {
+    padding: 0 1rem;
+}
+nav .anav-link{
+    text-decoration: none;
+    color: #4e547e;
+    font-size: 1.4rem;
+    
+    /*font-weight: 100;*/
+}
+nav .anav-link:hover{   /*17:47  minuts*/
+    /*color: #6e0aef;*/
+    background-color: #08d9d6;   /* من درس الجيم */
+    border-radius: 5px;   /* من درس الجيم */
+    }
+.hero{
+   
+    background-color: #f8f7fc;
+   
+}
+.hero-section{
+    max-width: 1366px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   /* من درس الجيم */  
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.hero .hero-section .content{
+    display: flex;
+    flex-direction: column;
+}
+.hero-section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .content h1{
+    
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero-section .content p{
+    color: rgb(29,29,29);
+    font-size: 1.6rem;
+}
+
+
+.hero-section .content p span{
+    color:  #6e0aef;
+}
+.btn{    /* .hero-section .btn{*/
+    width: 10rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;    /*27:52  minuts*/
+    outline: none;  /*مش شغاله*//*علشان اشيل الخط*/
+    border: none;
+    padding:0.75rem 1rem;
+    background-color: #6e0aef;
+    
+}
+.btn:hover{
+    background-color: #7d25f0;
+    cursor: pointer;
+}
+
+.btn a{       /*29:08  minuts*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/*section features */                     /*32:38  minuts*/
+
+section.features{
+    /*margin-top: 2rem ;*/
+    padding: 7rem 0;   /*المفروض 3 ريم بس انا زودتها*/
+    background-color: #f8f7fc;
+    
+    
+}
+
+
+section.features .features-section{
+    
+     max-width: 1366px;
+     margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   /* background-color: aqua;*/
+    }
+.features-section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+   /* font-weight: bold;*/
+    
+}
+
+.features-section .qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+                   /*34:46  minuts*/
+.features-section .qualities .quality{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}    
+    
+.features-section .qualities .quality:hover{
+   border: 2px dashed #6e0aef;
+}  
+
+/*.dist{
+    padding-top: 1rem;
+}*/
+
+.qualities .quality i{
+    font-size: 2rem;
+   color:  #6e0aef;
+    margin-bottom: 1rem;   /* 36:36 minuts*/
+}  
+
+.qualities .quality h3{
+    font-size: 1.6rem;
+   margin-bottom: 1rem;
+} 
+
+.quality p{               /* 37:00 minuts*/
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4e547e;
+} 
+
+.newest-phones{         /* 40:45 minuts*/
+    padding-top: 5rem;
+    
+    
+}    
+.newest-phones .phones-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;  
+} 
+.phones-section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    
+}
+.phones-section .phones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* grid-template-columns: 1fr 1fr 20px;*/
+    justify-content: flex-start;
+}
+.phones .phone{
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone img{
+    margin-bottom: 1rem;
+    
+}
+
+
+.phone img:hover{     /* 44:00 minuts*/
+   scale: 1.1;
+  /*cursor: pointer;*/
+    
+}
+.phone h3{
+    font-size: 1.6rem;
+   /* background-color: red;*/
+}
+.phones-section button{
+    width: 15rem;
+    margin-bottom: 1rem;
+   /* background-color: red;*/
+    align-self: center;
+    
+}
+/*footer-section*/      /* 46:26 minuts*/
+footer{
+    
+    height: 15vh;     /*حاسس انها مش شغاله*/
+    margin-top: 5rem;
+    padding: 2rem 0;
+   /* background-color: #f8f7fc;  /*  انا عكستها من عندى*/  */
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    background-color: #f8f7fc;  /*  انا عكستها من عندى*/
+}
+
+.footer-section p{
+    
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer-section .social{
+    
+    margin-bottom: 1rem;
+}
+.footer-section .social i{
+    
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+}
+.footer-section .social i:hover{
+   color: #6e0aef;
+   /* color: #7d25f0;*/
+    cursor: pointer;
+   
+}
+
+
+@media (max-width: 1300px){
+    
+   * {
+       font-size: 85%; 
+        
+    }
+    
+}                                  /* 52:00 minuts*/
+
+
+@media (max-width: 1170px){
+    
+   * {
+       font-size: 80%; 
+        
+    }
+    
+} 
+
+@media (max-width: 1000px){
+    
+   * {
+       text-align: center;
+        
+    }
+    .hero img{    /*minuts 54*/
+        display: none;
+    }
+    .hero-section{
+        
+        align-items: center;*/
+        padding-top: 2rem 0;
+        background-color: greenyellow;                 /*Ereas*/
+        width: 50%;
+   }
+    .hero .btn{
+        align-self: center;
+        
+    }
+    /*
+    .hero .content{
+        margin-top: 2rem;   /*حسب الرغبه*/
+    /*}*/
+    
+    
+   .features-section .qualities{
+        
+        flex-wrap: wrap;
+       justify-content: center;
+    }
+    .features-section .features-section{
+        align-items: center;
+        
+    }
+    .hero-section{
+        height: 70vh;
+    }
+    /*.hero{
+        
+        align-items: center;
+        padding: 2rem 0;
+        background-color: dimgrey;                 /*Ereas*/
+       /* width: 70%;*/
+   }
+} 
+
+@media (max-width: 600px){
+    
+   .hero-section .content h1{
+       font-size: 2rem;   /*مش شغاله*/  /*minuts 58*/
+        
+    }
+    
+
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    
+   .ulnav-items{
+       position: absolute;
+        left: 0;
+       top: 15vh;
+       flex-direction: column;
+       width: 100%;
+       
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

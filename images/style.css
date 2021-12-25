@@ -1,0 +1,38 @@
+/*#nheader{
+    background-image: url(images/SHOPBOK2.jpg);
+     background-color: aquamarine;*/
+    
+}
+    
+ *{                       /*  من درس ماريو - ظبطت اليو ال مع البارجراف*/
+    
+    margin: 0; /*  من درس ماريو - ظبطت اليو ال مع البارجراف*/
+    padding: 0; /*  من درس ماريو - ظبطت اليو ال مع البارجراف*/
+     height: 100%; /*  من عندى*/
+}   
+    
+    
+li{
+    font-size: 35px;
+    /*color: rgb(240,231,234);*/
+    display: inline-block;
+    padding-right: 25px;
+    
+}
+ul{
+    
+    float: left;
+}
+#text9{
+    
+    padding: auto;
+   /* padding-left: 0px;    */
+    background-color: black;
+   /*background-position: bottom;*/
+   
+}
+#body{
+    
+    text-align: center;
+    margin-top: 150px;
+}
